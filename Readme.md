@@ -24,13 +24,14 @@ Mapty is a web application designed to track and visualize running and cycling w
 ## Usage
 
 1.  **Location Permission:** Upon opening the application, your browser will likely display a pop-up window asking for permission to access your location. **Please allow location access for Mapty to function correctly.** The application relies on your location to display the map and record workout positions.
-2.  **Map Interaction:** Click on the map to add a new workout location.
-3.  **Sidebar Input:** Fill in the workout details in the sidebar.
-4.  **Workout Type:** Select either "Running" or "Cycling" to customize input fields.
-5.  **Data Entry:** Enter the duration, distance, and either elevation gain (Running) or cadence (Cycling).
-6.  **Submit:** Press Enter to record the workout.
-7.  **Visualization:** View the workout on the map with a marker and in the sidebar.
-8.  **Navigation:** Click on a marker or sidebar entry to navigate to the workout location on the map.
+2.  **Data Persistence:** The workout data you enter is stored locally in your browser and will remain even if you refresh the page (Ctrl+R or Cmd+R). This allows you to continue where you left off without losing your entries.
+3.  **Map Interaction:** Click on the map to add a new workout location.
+4.  **Sidebar Input:** Fill in the workout details in the sidebar.
+5.  **Workout Type:** Select either "Running" or "Cycling" to customize input fields.
+6.  **Data Entry:** Enter the duration, distance, and either elevation gain (Running) or cadence (Cycling).
+7.  **Submit:** Press Enter to record the workout.
+8.  **Visualization:** View the workout on the map with a marker and in the sidebar.
+9.  **Navigation:** Click on a marker or sidebar entry to navigate to the workout location on the map.
 
 ## Responsive Design
 
