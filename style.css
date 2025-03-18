@@ -1,0 +1,228 @@
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  padding: 2.5rem;
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  background-color: #fff;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Manrope', sans-serif;
+  overscroll-behavior-y: none;
+}
+
+/* a:link,
+  a:visited {
+    color: var(--color-brand--1);
+  } */
+
+.sidebar {
+  padding: 3rem 5rem 4rem;
+  flex-basis: 50rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark--1);
+
+  .logo {
+    margin-bottom: 4rem;
+    height: 5.2rem;
+    align-self: center;
+  }
+
+  .workouts {
+    list-style-type: none;
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .form {
+      margin-bottom: 1.75rem;
+      padding: 1.5rem 2.75rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 2.5rem;
+      height: 9.25rem;
+      border-radius: 0.5rem;
+      background-color: var(--color-dark--2);
+      transition: all 0.5s, transform 1ms;
+
+      .form__row {
+        display: flex;
+        align-items: center;
+
+        .form__label {
+          flex: 0 0 50%;
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+
+        .form__input {
+          padding: 0.3rem 1.1rem;
+          width: 100%;
+          background-color: var(--color-light--3);
+          font-family: inherit;
+          font-size: 1.4rem;
+          border: none;
+          border-radius: 0.3rem;
+          transition: all 0.2s;
+
+          &:focus {
+            background-color: #fff;
+          }
+        }
+      }
+
+      .form__btn {
+        display: none;
+      }
+
+      .form__row--hidden {
+        display: none;
+      }
+    }
+
+    .hidden {
+      margin-bottom: 0;
+      padding: 0 2.25rem;
+      height: 0;
+      transform: translateY(-30rem);
+      opacity: 0;
+    }
+  }
+
+  .workout {
+    margin-bottom: 1.75rem;
+    padding: 1.5rem 2.25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem 1.5rem;
+    border-radius: 5px;
+    background-color: var(--color-dark--2);
+    cursor: pointer;
+
+    .workout__title {
+      grid-column: 1 / -1;
+      font-weight: 600;
+      font-size: 1.7rem;
+    }
+
+    .workout__details {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .workout__icon {
+      margin-right: 0.2rem;
+      height: 0.28rem;
+      font-size: 1.8rem;
+    }
+
+    .workout__value {
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .workout__unit {
+      color: var(--color-light--1);
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  .workout--running {
+    border-left: 5px solid var(--color-brand--2);
+  }
+
+  .workout--cycling {
+    border-left: 5px solid var(--color-brand--1);
+  }
+
+  .copyright {
+    margin-top: auto;
+    text-align: center;
+    color: var(--color-light--1);
+    font-size: 1.3rem;
+
+    .x-link {
+      &:link,
+      &:visited {
+        color: var(--color-light--1);
+        transition: all 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: var(--color-light--2);
+      }
+    }
+  }
+}
+
+#map {
+  flex: 1;
+  height: 100%;
+  background-color: var(--color-light--1);
+}
+
+/* Popup width is defined in JS using options */
+.leaflet-popup {
+  .leaflet-popup-content-wrapper {
+    padding-right: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-dark--1);
+    color: var(--color-light--2);
+  }
+
+  .leaflet-popup-content {
+    font-size: 1.5rem;
+  }
+
+  .leaflet-popup-tip {
+    background-color: var(--color-dark--1);
+  }
+}
+
+.running-popup {
+  .leaflet-popup-content-wrapper {
+    border-left: 0.5rem solid var(--color-brand--2);
+  }
+}
+
+.cycling-popup {
+  .leaflet-popup-content-wrapper {
+    border-left: 0.5rem solid var(--color-brand--1);
+  }
+}
