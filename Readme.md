@@ -45,4 +45,4 @@ The application is designed to be responsive across various screen sizes, includ
 
 ## Author
 
-Modified by [Nijat Guliyev](https://www.linkedin.com/in/nijat-guliyev-1949a4294/). Check out more projects on my [GitHub profile](https://github.com/Nijat-Guliyev).
+This is a modified version of the original work by [Jonas Schmedtmann](jonas.io) / [X profile](https://x.com/jonasschmedtman). While the design remains the same, modifications have been made to the code by [Nijat](https://www.linkedin.com/in/nijat-guliyev-1949a4294/). Feel free to check out my [GitHub profile](https://github.com/Nijat-Guliyev) for more projects!
